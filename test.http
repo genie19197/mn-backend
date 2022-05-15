@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:3000
+
+###
+# @name get-users
+GET {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+
+###
+# @name get-user
+GET {{baseUrl}}/address?code=694910 HTTP/1.1
+Content-Type: application/json
+
+
+
+###
+# @name add-user
+POST {{baseUrl}}/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "address" : "0x2742C425f25e88F21DdBFfD4788bd33E22216210"
+}
