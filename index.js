@@ -3,7 +3,9 @@ const app = express();
 const port = 80;
 const axios = require("axios");
 const bodyParser = require("body-parser");
+const cors = require('cors')
 app.use(bodyParser.json());
+app.use(cors());
 
 const users = [{ address: "0x05599638C249d6e0f7b46d0f3091056f1e26Dfe1", nonce: "0", msg: "nftprove", signature: "", code: "hellocode" }];
 const apiKey = "xwR98PPh7Dq1rVnEwPUbn2zyEyVvMJQG";
